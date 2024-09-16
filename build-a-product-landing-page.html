@@ -1,0 +1,331 @@
+** start of undefined **
+
+<<!DOCTYPE html>
+<html>
+  <head>
+    <title>Landing Page</title>
+    <meta meta name="viewport" content="width=device-width" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <header id="header">
+    <nav id="nav-bar">
+      <img
+        id="header-img"
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+        alt="product landing page logo"
+      />
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <h2 id="heading">Handcrafted, home-made masterpieces</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Enter your email here"
+      /><br />
+      <input id="submit" type="submit" value="GET STARTED" />
+    </form>
+
+    <section id="features">
+      
+      <div class="feature">
+        <div class="icon"><i class="fa-solid fa-fire fa-3x"></i></div>
+        <div class="desc">
+          <h2>Premuim Materials</h2>
+          <p>
+            Our trombones use the shiniest brass which is sourced locally. This
+            will increase the longevity of your purchase.
+          </p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="icon"><i class="fa-solid fa-truck fa-3x"></i></div>
+        <div class="desc">
+          <h2>Fast Shipping</h2>
+          <p>
+            We make sure you recieve your trombone as soon as we have finished
+            making it. We also provide free returns if you are not satisfied.
+          </p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="icon"><i class="fa-solid fa-battery fa-3x"></i></div>
+
+        <div class="desc">
+          <h2>Quality Assurance</h2>
+          <p>
+            For every purchase you make, we will ensure there are no damages or
+            faults and we will check and test the pitch of your instrument.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works">
+      <iframe id="video"
+        id="iframe"
+        width="60%"
+        height="240"
+        src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+      >
+      </iframe>
+    </section>
+
+    <section id="pricing">
+      <div class="card">
+        <h3 class="card-header">TENOR TROMBONE</h3>
+        <h2 class="card-price">$600</h2>
+        <div class="card-desc">
+          <ul>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+        </div>
+        <div class="submit">
+          <input id="submit" type="submit" name="submit" value="SELECT" />
+        </div>
+      </div>
+      <div class="card">
+        <h3 class="card-header">BASS TROMBONE</h3>
+        <h2 class="card-price">$1200</h2>
+        <div class="card-desc">
+          <ul>
+            <li>Plays similar to a Trumpet</li>
+            <li>Great for Jazz Bands</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+        </div>
+        <div class="submit">
+          <input id="submit" type="submit" name="submit" value="SELECT" />
+        </div>
+      </div>
+      <div class="card">
+        <h3 class="card-header">VALVE TROMBONE</h3>
+
+        <div class="card-main">
+          <h2 class="card-price">$1200</h2>
+          <div class="card-desc">
+            <ul>
+              <li>Plays similar to a Trumpet</li>
+              <li>Great for Jazz Bands</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ul>
+          </div>
+          <div class="submit">
+            <input id="submit" type="submit" name="submit" value="SELECT" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <ul>
+        <li>Privacy</li>
+        <li>Terms</li>
+        <li>Contract</li>
+      </ul>
+      <p class="copy">Copyright 2016, Original Trombones</p>
+    </footer>
+  </main>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  body {
+    background-color: rgb(250, 250, 250);
+  }
+  form,
+  #heading,
+  #how-it-works {
+    display: flex;
+    justify-content: center;
+  }
+  #how-it-works {
+    margin: 20px;
+  }
+  #main {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  #pricing {
+    display: flex;
+    justify-content: space-between;
+  }
+  .feature,
+  .icon {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #features {
+    margin-top: 100px;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .desc {
+    margin: 10px;
+  }
+ i{
+    color: rgb(138, 3, 104);
+    height: 60px;
+    width: 60px;
+ 
+ 
+  }
+  #header-img {
+    width: 300px;
+  }
+  #heading {
+    margin: 20px;
+  }
+  #header-img {
+    margin: 15px;
+  }
+
+  ul > li {
+    margin: 10px;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+  }
+
+  form {
+    display: block;
+    text-align: center;
+  }
+  input {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  input[type="email"] {
+    width: 250px;
+  }
+  input[type="submit"] {
+    width: 150px;
+    border: 0;
+    font-weight: bold;
+    background-color: rgb(138, 3, 104);
+    color: rgb(250, 250, 250);
+  }
+  .card-main {
+    padding-bottom: 15px;
+  }
+  #nav-bar {
+    position: fixed;
+    top: 0px;
+    background-color: rgb(250, 250, 250);
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 1;
+    padding-bottom: 30px;
+  }
+  #nav-bar > ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    height: 50px;
+  }
+  #footer > ul,
+  .copy {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: end;
+  }
+
+  #main {
+    width: 80%;
+    margin: auto;
+  }
+  .card {
+    border: 1px solid black;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin: 20px 10px;
+  }
+
+  .card-price {
+    margin: 15px;
+  }
+
+  @media only screen and (max-width: 660px) {
+    #nav-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #nav-bar > ul {
+      display: flex;
+      flex-direction: column;
+    }
+    #features {
+      text-align: center;
+    }
+    #main {
+      margin: auto;
+      width: 100%;
+      position: relative;
+      top: 200px;
+    }
+    .icon {
+      margin-left: 30px;
+    }
+    #pricing {
+      display: block;
+      width: 50%;
+      margin: auto;
+    }
+    #how-it-works {
+      width: 100%;
+    }
+  }
+
+** end of undefined **
+

@@ -1,0 +1,160 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Tribute Page</title>
+  </head>
+  <body>
+    <main id="main">
+      <header>
+        <h1>Dr. Norman Borlaug</h1>
+      </header>
+      <p id="title">The man who saved a billion lives</p>
+
+      <figure id="img-div">
+        <img
+          id="image"
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg"
+          alt="Image of men in a field of wheat"
+        />
+        <figcaption id="img-caption"> 
+          Dr. Norman Borlaug, third from the left, trains biologists in Mexico
+          on how to increase wheat yields - part of his life-long war on hunger.
+        </figcaption>
+      </figure>
+      <h3>Here is a timeline of Dr. Borlaug's life:</h3>
+      <div id="tribute-info">
+        <ul>
+          <li>
+           <em>1914 </em> - Born in Cresco, Iowa
+        </li>
+          <li>
+            <em>1933</em> - Leaves his family's farm to attend the University of
+            Minnesota, thanks to a Depression era program known as the "National
+            Youth Administration"
+          </li>
+          <li>
+            <em>1935</em>- Has to stop school and save up more money. Works in the
+            Civilian Conservation Corps, helping starving Americans. "I saw how
+            food changed them", he said. "All of this left scars on me."
+          </li>
+          <li>
+            <em>1937</em>- Finishes university and takes a job in the US Forestry
+            Service
+          </li>
+          <li>
+            <em>1938</em> - Marries wife of 69 years Margret Gibson. Gets laid off due to
+            budget cuts. Inspired by Elvin Charles Stakman, he returns to school
+            study under Stakman, who teaches him about breeding pest-resistent
+            plants.
+          </li>
+        </ul>
+
+        <p id="tribute-quote">
+          "Borlaug's life and achievement are testimony to the far-reaching
+          contribution that one man's towering intellect, persistence and
+          scientific vision can make to human peace and progress."
+        </p>
+        <p id="quoter">-- Indian Prime Minister Manmohan Singh</p>
+      </div>
+
+      <footer id="footer">
+        <p>
+          If you have time, you should read more about this incredible human
+          being on his
+          <a id="tribute-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">Wikipedia entry</a>.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+ * {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0px;
+  }
+  /*Basic Styles*/
+
+ 
+  main {
+    background-color: 252, 246, 227;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+img{
+  display: block;
+}
+  /*Typography*/
+  h1 {
+    margin-top: 3rem;
+  }
+  #tribute-info {
+    margin: auto;
+    max-width: 60%;
+    text-align: start;
+    line-height: 25px;
+    font-weight: 100;
+  }
+  figcaption {
+    margin: 0.5rem;
+  }
+  #img-div {
+    background-color: white;
+    max-width: 95%;
+    margin: auto;
+    padding: 1rem 5rem;
+  }
+  #image {
+    max-width: 100%;
+  }
+  body {
+    margin: 1rem;
+    text-align: center;
+  }
+  li,
+  p,
+  h3 {
+    margin: 2rem;
+  }
+  li em:first-child {
+    font-weight: bold;
+    font-style: unset;
+  }
+  #tribute-quote,
+  #quoter {
+    text-align: justify;
+    font-style: italic;
+   
+  }
+  #footer{
+    font-weight: bold;
+  }
+  a:active{
+    color:slateblue
+  }
+a:visited{
+    color:hotpink;
+}
+  @media only screen and (max-width: 1000px) {
+    #tribute-info {
+      max-width: 100%;
+    }
+    #img-div {
+      background-color: white;
+      max-width: 95%;
+      margin: auto;
+      padding: 1rem 0.5rem;
+    }
+  }
+
+** end of undefined **
+

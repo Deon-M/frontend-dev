@@ -1,0 +1,207 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <title>survey-form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </header>
+    <div class="form">
+      <form id="survey-form">
+        <label id="name-label" for="name">Name</label><br />
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter your name"
+          required
+        /><br />
+        <label id="email-label" for="email" required>Email</label><br />
+        <input
+          id="email"
+          type="email"
+          pattern=".+@globex\.com"
+          size="30"
+          placeholder="Enter your email"
+          required
+        /><br />
+        <label id="number-label" for="number">Age (optional)</label><br />
+        <input
+          id="number"
+          type="number"
+          placeholder="Age"
+          min="1"
+          max="120"
+          required
+        /><br />
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        ><br />
+        <select id="dropdown">
+          <option value="" disabled selected hidden>Select current role</option>
+          <option value="Student">Student</option>
+          <option value="Full Time Job">Full Time Job</option></select
+        ><br />
+        <p class="question">Would you recommend freeCodeCamp to a friend?</p>
+        <input
+          id="definitely"
+          name="recommenendation"
+          type="radio"
+          value="definitely"
+        />
+        <label for="definitely">Definitely</label>
+        <br />
+        <input id="maybe" name="recommenendation" type="radio" value="maybe" />
+        <label for="maybe">Maybe</label>
+        <br />
+        <input
+          id="not-sure"
+          name="recommenendation"
+          type="radio"
+          value="not-sure"
+        />
+        <label for="not-sure">Not Sure</label>
+        <br />
+        <p class="question">What would you like to see improved?</p>
+        <input id="front-end" type="checkbox" value="front-end" />
+        <label for="font-end">Frond-end Projects</label><br />
+        <input id="back-end" type="checkbox" value="back-end" />
+        <label for="back-end">Back-end Projects</label> <br />
+        <input
+          id="data-visualisation"
+          type="checkbox"
+          value="data-visualisation"
+        />
+        <label for="data-visualisation">Data Visualisation</label>
+        <br /><input id="challenges" type="checkbox" value="challenges" />
+
+        <label for="challenges">Challenges</label>
+
+        <br />
+        <textarea
+          cols="50"
+          rows="10"
+          placeholder="Enter your comment here..."
+        ></textarea
+        ><br />
+        <input id="submit" type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+font-weight: lighter;
+  }
+  body{
+    background-image:linear-gradient(
+      rgba(80, 2, 143, 0.797), 
+      rgba(80, 2, 143,0.797)
+    ),url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+
+
+  }
+  /*Typography*/
+  header {
+    text-align: center;
+  }
+  form,
+  h1 {
+    font-size: 3rem;
+  }
+  p,option {
+    font-size: 2rem;
+  }
+  
+  /*Form*/
+  div.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5rem;
+    border-radius: 1%;
+  }
+
+  /*Spacing*/
+  body {
+    margin: 2rem;
+    color:white;
+color:rgba(255, 255, 255, 0.9);
+ text-shadow:0 0 5px rgba(0, 0, 0, 0.2);
+
+  }
+  #title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  #description {
+    margin-bottom: 5rem;
+    font-style: italic;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="submit"],
+  textarea,select{
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    width: 100%;
+    transition: border-color 1.5s box-shadow 1.5s;
+  }
+ 
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  textarea:focus,select:focus {
+    border-color: lightskyblue;
+    box-shadow: 0 0 0 3px rgba(30, 100, 192, 0.3);
+    outline: 0;
+  }
+  input[type="number"],
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    margin-bottom: 3rem;
+  }
+
+  .question,
+  textarea {
+    margin-top: 3rem;
+  }
+  input[type=submit]{
+    color: white;
+    background-color: rgb(103, 178, 103);
+
+  }
+  input[type=submit]:hover{
+    cursor: pointer;
+  }
+
+** end of undefined **
+
